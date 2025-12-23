@@ -1,1 +1,4 @@
-DATA_PATH = "fake_path"
+from pathlib import Path
+
+DATA_PATH = Path(__file__).parents[1] / "data"
+MODELS_PATH = Path(__file__).parents[1] / "models"
